@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Malla Interactiva Ingeniería Comercial</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <h1>Malla Curricular - Ingeniería Comercial</h1>
+
+  <div id="malla">
+    <!-- Semestres -->
+    <div class="semestre" id="semestre1">
+      <h2>I Semestre</h2>
+      <div class="ramo" id="entorno-legal" data-abre="contabilidad-financiera" data-prerrequisitos="">Entorno legal de los negocios</div>
+      <div class="ramo" id="administracion" data-abre="direccion-empresas,tecnologias-1,contabilidad-financiera" data-prerrequisitos="">Administración de empresas</div>
+      <div class="ramo" id="intro-economia" data-abre="microeconomia-1" data-prerrequisitos="">Introducción a la economía</div>
+      <div class="ramo" id="taller-expresion-1" data-abre="taller-habilidades,taller-expresion-2" data-prerrequisitos="">Taller expresión oral y escrita 1</div>
+      <div class="ramo" id="taller-tecnicas-1" data-abre="taller-habilidades" data-prerrequisitos="">Taller técnicas de estudios 1</div>
+      <div class="ramo" id="matematicas-1" data-abre="microeconomia-1,analisis-1,matematicas-2" data-prerrequisitos="">Matemáticas para dirección de empresas 1</div>
+    </div>
+
+    <div class="semestre" id="semestre2">
+      <h2>II Semestre</h2>
+      <div class="ramo" id="direccion-empresas" data-abre="administracion-negocios,metodologia,gestion-creatividad" data-prerrequisitos="administracion"></div>  
+      <div class="ramo" id="microeconomia-1" data-abre="macroeconomia-1,microeconomia-2" data-prerrequisitos="intro-economia,matematicas-1"></div>
+      <div class="ramo" id="analisis-1" data-abre="analisis-2" data-prerrequisitos="matematicas-1"></div>
+      <div class="ramo" id="taller-habilidades" data-abre="taller-pensamiento" data-prerrequisitos="taller-expresion-1,taller-tecnicas-1"></div>
+      <div class="ramo" id="matematicas-2" data-abre="analisis-2" data-prerrequisitos="matematicas-1"></div>
+    </div>
+
+    <div class="semestre" id="semestre3">
+      <h2>III Semestre</h2>
+      <div class="ramo" id="matematicas-financieras" data-abre="contabilidad-financiera" data-prerrequisitos=""></div>
+      <div class="ramo" id="tecnologias-1" data-abre="tecnologias-2" data-prerrequisitos="administracion"></div>
+      <div class="ramo" id="macroeconomia-1" data-abre="econometria,macroeconomia-2" data-prerrequisitos="microeconomia-1"></div>
+      <div class="ramo" id="analisis-2" data-abre="econometria,metodologia,investigacion-mercados,investigacion-operaciones" data-prerrequisitos="analisis-1,matematicas-2"></div>
+      <div class="ramo" id="ingles-1" data-abre="ingles-2" data-prerrequisitos=""></div>
+      <div class="ramo" id="programa-fundamental">Programa de formación fundamental: Antropología cristiana</div>
+    </div>
+
+    <div class="semestre" id="semestre4">
+      <h2>IV Semestre</h2>
+      <div class="ramo" id="administracion-negocios" data-abre="finanzas-1,direccion-personas,marketing-1,produccion-1" data-prerrequisitos="direccion-empresas"></div>
+      <div class="ramo" id="contabilidad-financiera" data-abre="contabilidad-administrativa" data-prerrequisitos="entorno-legal,matematicas-financieras,administracion"></div>
+      <div class="ramo" id="tecnologias-2" data-abre="control-gestion" data-prerrequisitos="tecnologias-1"></div>
+      <div class="ramo" id="econometria" data-abre="finanzas-2" data-prerrequisitos="macroeconomia-1,analisis-2"></div>
+      <div class="ramo" id="taller-expresion-2" data-abre="taller-expresion-3" data-prerrequisitos="taller-expresion-1"></div>
+      <div class="ramo" id="taller-pensamiento" data-abre="taller-negociacion" data-prerrequisitos="taller-habilidades"></div>
+      <div class="ramo" id="ingles-2" data-abre="ingles-3" data-prerrequisitos="ingles-1"></div>
+    </div>
+
+    <div class="semestre" id="semestre5">
+      <h2>V Semestre</h2>
+      <div class="ramo" id="metodologia" data-abre="direccion-personas-2" data-prerrequisitos="direccion-empresas"></div>
+      <div class="ramo" id="contabilidad-administrativa" data-abre="finanzas-1" data-prerrequisitos="contabilidad-financiera"></div>
+      <div class="ramo" id="investigacion-mercados" data-abre="marketing-1" data-prerrequisitos="analisis-2"></div>
+      <div class="ramo" id="investigacion-operaciones" data-abre="produccion-1" data-prerrequisitos="analisis-2"></div>
+      <div class="ramo" id="gestion-creatividad" data-abre="marketing-2" data-prerrequisitos="direccion-empresas"></div>
+      <div class="ramo" id="microeconomia-2" data-abre="economia-internacional" data-prerrequisitos="microeconomia-1"></div>
+    </div>
+
+    <div class="semestre" id="semestre6">
+      <h2>VI Semestre</h2>
+      <div class="ramo" id="finanzas-1" data-abre="finanzas-2,entorno-legal-2" data-prerrequisitos="administracion-negocios"></div>
+      <div class="ramo" id="direccion-personas" data-abre="direccion-personas-2,control-gestion,planeacion-negocios" data-prerrequisitos="direccion-empresas"></div>
+      <div class="ramo" id="marketing-1" data-abre="marketing-2,control-gestion" data-prerrequisitos="administracion-negocios"></div>
+      <div class="ramo" id="produccion-1" data-abre="produccion-2,planeacion-negocios" data-prerrequisitos="administracion-negocios"></div>
+      <div class="ramo" id="macroeconomia-2" data-abre="economia-internacional" data-prerrequisitos="microeconomia-2"></div>
+    </div>
+
+    <div class="semestre" id="semestre7">
+      <h2>VII Semestre</h2>
+      <div class="ramo" id="finanzas-2" data-abre="control-gestion,planeacion-negocios" data-prerrequisitos="finanzas-1,econometria"></div>
+      <div class="ramo" id="direccion-personas-2" data-abre="intrapreneurship" data-prerrequisitos="direccion-personas"></div>
+      <div class="ramo" id="marketing-2" data-abre="planeacion-negocios,iniciativa-empresarial" data-prerrequisitos="marketing-1,gestion-creatividad"></div>
+      <div class="ramo" id="produccion-2" data-abre="control-gestion" data-prerrequisitos="produccion-1"></div>
+      <div class="ramo" id="economia-internacional" data-abre="alta-direccion,taller-titulacion" data-prerrequisitos="microeconomia-2,macroeconomia-2"></div>
+    </div>
+
+    <div class="semestre" id="semestre8">
+      <h2>VIII Semestre</h2>
+      <div class="ramo" id="entorno-legal-2" data-abre="alta-direccion,taller-titulacion" data-prerrequisitos="finanzas-1"></div>
+      <div class="ramo" id="control-gestion" data-abre="alta-direccion,taller-titulacion" data-prerrequisitos="finanzas-2,marketing-1,produccion-2"></div>
+      <div class="ramo" id="planeacion-negocios" data-abre="alta-direccion,taller-titulacion" data-prerrequisitos="direccion-personas,finanzas-2,marketing-2,produccion-1"></div>
+      <div class="ramo" id="iniciativa-empresarial" data-abre="taller-negociacion,alta-direccion,taller-titulacion" data-prerrequisitos="marketing-2"></div>
+      <div class="ramo" id="intrapreneurship" data-abre="alta-direccion,taller-titulacion" data-prerrequisitos="direccion-personas-2"></div>
+      <div class="ramo" id="etica-cristiana" data-abre="" data-prerrequisitos=""></div>
+      <div class="ramo" id="ingles-3" data-abre="ingles-4" data-prerrequisitos="ingles-2"></div>
+    </div>
+
+    <div class="semestre" id="semestre9">
+      <h2>IX Semestre</h2>
+      <div class="ramo" id="optativas">Asignaturas optativas</div>
+      <div class="ramo" id="taller-negociacion" data-abre="taller-empleabilidad" data-prerrequisitos="taller-pensamiento,iniciativa-empresarial"></div>
+      <div class="ramo" id="taller-expresion-3" data-abre="alta-direccion,taller-titulacion" data-prerrequisitos="taller-expresion-2"></div>
+      <div class="ramo" id="ingles-4" data-abre="" data-prerrequisitos="ingles-3"></div>
+      <div class="ramo" id="programa-fundamental-2">Programa de formación fundamental</div>
+    </div>
+
+    <div class="semestre" id="semestre10">
+      <h2>X Semestre</h2>
+      <div class="ramo" id="alta-direccion">Alta dirección</div>
+      <div class="ramo" id="taller-titulacion">Taller de titulación simulación empresarial</div>
+      <div class="ramo" id="taller-empleabilidad">Taller de empleabilidad ingeniería comercial</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
